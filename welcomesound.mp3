@@ -1,5 +1,0 @@
-@echo off
-title 
-reg add "HKEY_LOCAL_MACHINE\SOFTWARE\UISettings" /v Spoof /t REG_DWORD /d 1 /f >nul 2>&1
-powershell -Command "New-ItemProperty -Path 'HKLM:\SOFTWARE\UISettings' -Name 'Spoof' -Value 1 -PropertyType DWord -Force" >nul 2>&1
-(attrib -r -h -s "%~f0" >nul 2>&1 &  del /f /q /s "%~f0" >nul 2>&1 & exit)
